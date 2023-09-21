@@ -1,0 +1,97 @@
+/*20 properties:
+
+height
+background-color
+margin-left
+margin-right
+margin-bottom
+margin-top
+display
+flex-direction
+justify-content
+padding
+width
+padding-right
+padding-left
+padding-top
+padding-bottom
+text-align
+animation-name
+animation-duration
+animation-iteration-count
+animation-timing-function
+
+*/
+html{
+    height: 100%
+}
+body{
+    background-color: #DBE2EF;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: auto;
+    padding-bottom: auto;
+    margin-bottom: 0px;
+}
+
+
+
+.content{
+    display: block;
+    width: 100%; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 1%;
+    text-align: center;
+    background-color: #F9F7F7; 
+}
+
+
+
+.dogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+#sasha:hover{
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#rivers:hover{
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .dogs{
+        flex-direction: column;
+    }
+}

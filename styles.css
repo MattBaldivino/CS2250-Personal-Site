@@ -1,4 +1,4 @@
-/*31 properties:
+/*32 properties:
 
 height
 background-color
@@ -33,6 +33,12 @@ align-items
 max-width
 max-height
 
+animation-delay
+animation-direction
+font-weight
+font-size-adjust
+text-indent
+text-shadow
 */
 html{
     height: 100%
@@ -44,12 +50,15 @@ body{
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
-    
 }
+
 p{
     margin-bottom: 0;
     margin-top: 0;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size-adjust: none;
+    text-indent: 5px;
 }
 
 h1, h2, h3, h4{
@@ -59,6 +68,7 @@ h1, h2, h3, h4{
 a{
     text-decoration: none;
     color: #DDC3A5;
+    text-shadow: 2px 2px #000000;
 }
 
 table{
@@ -105,7 +115,6 @@ hr{
     padding-bottom: 1%;
     margin-bottom: 0px;
     background-color: #2F3C7E;
-
 }
 
 .content{
@@ -169,6 +178,8 @@ a:hover{
 #sasha:hover{
     animation-name: spin;
     animation-duration: 500ms;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -189,13 +200,28 @@ a:hover{
     }
 }
 
+@media screen and (max-width: 2000px){
+    video{
+        max-width: 500px;
+        max-height: 600px;
+    } 
+    img{
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
 @media screen and (max-width: 900px){
     .dogs{
         flex-direction: column;
     }
     embed{
-        max-width: 200px;
-        max-height: 300px;
+        max-width: 500px;
+        max-height: 600px;
+    }
+    video{
+        max-width: 500px;
+        max-height: 600px;
     }
 }
 
@@ -204,6 +230,14 @@ a:hover{
         flex-direction: column;
     }
     embed{
+        max-width: 200px;
+        max-height: 300px;
+    }
+    video{
+        max-width: 200px;
+        max-height: 300px;
+    }
+    img{
         max-width: 200px;
         max-height: 300px;
     }

@@ -1,4 +1,4 @@
-/*20 properties:
+/*31 properties:
 
 height
 background-color
@@ -21,50 +21,149 @@ animation-duration
 animation-iteration-count
 animation-timing-function
 
+border
+border-collapse
+border-top
+border-bottom
+border-left
+border-right
+text-decoration
+font-family
+align-items
+max-width
+max-height
+
 */
 html{
     height: 100%
 }
 body{
-    background-color: #DBE2EF;
+    background-color: #2F3C7E;
     height: 100%;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    
 }
 p{
     margin-bottom: 0;
     margin-top: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+h1, h2, h3, h4{
+    font-family: 'Yeseva One', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: #DDC3A5;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+figcaption{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #DDC3A5;
+}
+
+table th {
+    border: 1px solid #DDC3A5;
+}
+
+table tr:first-child th {
+    border-top: 0;
+}
+
+table tr th:first-child {
+    border-left: 0;
+}
+
+table tr:last-child th {
+    border-bottom: 0;
+}
+
+table tr th:last-child {
+    border-right: 0;
+}
+
+hr{
+    border-color: #2F3C7E;
+}
+
 .top{
     display: flex;
     flex-direction: row;
     justify-content: right;
     padding-top: 1%;
     padding-right: 1%;
-    padding-left: auto;
-    padding-bottom: auto;
+    padding-left: 1%;
+    padding-bottom: 1%;
     margin-bottom: 0px;
+    background-color: #2F3C7E;
+
 }
-
-
 
 .content{
     display: block;
     width: 100%; 
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     text-align: center;
-    background-color: #F9F7F7; 
+    background-color:#DDC3A5; 
+    color: #2F3C7E;
 }
-
-
 
 .dogs{
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    background-color: #2F3C7E;
+}
+
+.dogs h3{
+    color: #DDC3A5;
+}
+
+.dogs h4{
+    color: #DDC3A5;
+}
+
+.title{
+    text-align: center;
+}
+
+.advertisement{
+    background-color: #DDC3A5;
+}
+
+.info{
+    background-color: #DDC3A5;
+    color: #2F3C7E;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#sasha{
+    max-width: 300px;
+    max-height: 420px;
+}
+
+#rivers{
+    max-width: 320px;
+    max-height: 340px;
+}
+
+a:hover{
+    color: #EEA47F;
 }
 
 #sasha:hover{
@@ -93,5 +192,19 @@ p{
 @media screen and (max-width: 900px){
     .dogs{
         flex-direction: column;
+    }
+    embed{
+        max-width: 200px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .dogs{
+        flex-direction: column;
+    }
+    embed{
+        max-width: 200px;
+        max-height: 300px;
     }
 }

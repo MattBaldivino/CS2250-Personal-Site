@@ -205,7 +205,7 @@ a:hover{
     video{
         max-width: 500px;
         max-height: 600px;
-        min-width: 300px;
+        min-width: 150px;
         min-height: 300px;
     } 
     img{

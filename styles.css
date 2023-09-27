@@ -212,6 +212,10 @@ a:hover{
         max-width: 500px;
         max-height: 500px;
     }
+    embed{
+        max-width: 500px;
+        max-height: 600px;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -219,12 +223,16 @@ a:hover{
         flex-direction: column;
     }
     embed{
-        max-width: 500px;
-        max-height: 600px;
+        max-width: 300px;
+        max-height: 400px;
     }
     video{
-        max-width: 500px;
-        max-height: 600px;
+        max-width: 300px;
+        max-height: 400px;
+    }
+    img{
+        max-width: 300px;
+        max-height: 400px;
     }
 }
 
